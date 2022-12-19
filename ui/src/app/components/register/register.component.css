@@ -1,0 +1,50 @@
+.login-box {
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 150px;
+    /* opacity: .7; */
+}
+
+mat-card {
+    height: 460px;
+}
+
+mat-card-header {
+    background-color: yellowgreen;
+    line-height: 30px;
+    height: 30px;
+}
+
+mat-card-content {
+    padding: 16px;
+}
+
+mat-radio-button {
+    margin-right: 16px;
+}
+
+
+mat-form-field {
+    margin-top: 10px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.mat-divider {
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+marquee{
+    color: red;
+    font-size: large;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+h1{
+    
+    border: 2px;
+    align-content: flex-start;
+}

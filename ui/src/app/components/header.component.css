@@ -1,0 +1,17 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .zencar{
+    color: wheat;
+    font-style:italic ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+  }

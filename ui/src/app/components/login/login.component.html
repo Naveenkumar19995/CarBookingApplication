@@ -1,0 +1,50 @@
+<marquee>Thank You for choosing our Service</marquee>
+<div class="login-box">
+    <mat-card style="text-align: center;">
+        <mat-card-header> 
+            <mat-card-title>Sign In</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="full-width">
+                <!-- <mat-radio-group [formControl]="userTypeFormControl">
+                    <mat-radio-button value="customer" checked>Customer</mat-radio-button>
+                    <mat-radio-button value="dealer">Dealer</mat-radio-button>
+                </mat-radio-group> -->
+<!-- 
+                <mat-divider></mat-divider>
+                <br>
+                <br> -->
+                
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="UserId" [formControl]="usernameFormControl" [errorStateMatcher]="matcher">
+                    <mat-hint>Enter UserId</mat-hint>
+                    <mat-error *ngIf="usernameFormControl.hasError('username') && !usernameFormControl.hasError('required') && usernameFormControl.invalid">
+                        Please enter a valid User Id
+                
+                    </mat-error>
+                    <mat-error *ngIf="usernameFormControl.hasError('required')">
+                        UserId is <strong>required 12 charecters</strong>
+                    </mat-error>
+                </mat-form-field>
+                
+                <mat-form-field class="full-width">
+                    <input type="password" matInput placeholder="Password" [formControl]="passwordFormControl" [errorStateMatcher]="matcher">
+                    <mat-hint>Enter password</mat-hint>
+                    <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required') &&  passwordFormControl.invalid">
+                        Please enter a valid password
+                    </mat-error>
+                    <mat-error *ngIf="passwordFormControl.hasError('required')">
+                        Password is <strong>required min 5 & max 8 charecters</strong>
+                    </mat-error>
+                </mat-form-field>
+
+                <mat-card-actions [align]="'end'">
+                    <button mat-button color="primary" (click)="newUser()">New User?</button>
+                    <button mat-raised-button color="primary" style="margin-right: 8px;" (click)="login()">SIGN IN</button>
+                    
+                </mat-card-actions>
+            </form>
+        </mat-card-content>
+    </mat-card>
+   
+</div>

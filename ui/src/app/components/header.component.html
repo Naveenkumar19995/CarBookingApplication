@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" role="heading">
+    <mat-toolbar-row>
+   
+        <mat-icon style="cursor: pointer; color: white;" *ngIf="userName!=''" class="example-icon" aria-hidden="false" aria-label="Example delete icon" (click)="toggleMenu()">menu</mat-icon>
+        <span class="zencar"><strong>Zen</strong></span><span>Car Booking</span>
+        
+        <span class="example-spacer">
+             {{userType | uppercase}} 
+        </span>
+        <span *ngIf="name!=''" >{{name | uppercase}}</span>
+       
+        <mat-icon style="cursor: pointer; color: red;" *ngIf="username!=''" color="secondary" class="example-icon" aria-hidden="false" aria-label="Example delete icon" (click)="signOut()">exit_to_app</mat-icon>
+    </mat-toolbar-row>
+</mat-toolbar>
